@@ -4,6 +4,7 @@ A proof-of-concept communication system using a TFMini Plus LiDAR sensor to tran
 
 This project demonstrates how LiDAR can be repurposed for short-range data communication by encoding messages into pulses (object present = 1, object absent = 0) and decoding them back into text.
 
+
 🚀 Features
 
 Transmit ASCII messages over LiDAR pulses.
@@ -16,6 +17,7 @@ Transmission and reception logs in CSV format.
 
 Configurable bit duration and distance threshold.
 
+
 🛠 Hardware Requirements
 
 TFMini Plus LiDAR Sensor (UART mode).
@@ -26,17 +28,19 @@ Optional: two LiDARs (one as transmitter, one as receiver).
 
 If using only one LiDAR, transmitter side simulates pulses by manually blocking/unblocking.
 
+
 ⚙️ Setup
 
 1.Clone the repository:
 
-git clone https://github.com/your-username/LiDAR-Comms.git
+git clone https://github.com/SSrivastava18/Communication-setup-for-UGVs-using-LIDAR.git
 
 cd LiDAR-Comms
 
 2.Install dependencies:
 
 pip install pyserial
+
 
 📡 Usage
 
@@ -74,6 +78,7 @@ Validates checksum.
 
 Saves logs to reception_log.csv.
 
+
 🔧 Configuration
 
 Bit Duration (bit_duration)
@@ -89,6 +94,7 @@ Message
 In transmitter.py, change:
 
 message = "HELP"
+
 
 📜 License
 
